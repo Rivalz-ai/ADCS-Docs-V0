@@ -143,7 +143,7 @@ Data adapter shema
 • pow10 - compute a power of 10 from input \
 • round - apply a round operation on input \
 
-**Aggregator**
+**Aggregator** \
 Aggregator aggregates the data retrieved from the fetchers and provide the the final, aggregated data:
 
 Aggregator templates:
@@ -174,5 +174,7 @@ Base on the datatypes, we can apply different aggregation methods, some of which
 
 ![aggregation methods](image-2.png)
 
+**Create embeddings vector via Rivalz**
+For AI agents compatibility, we store all the aggregated data inside [Rivalz ecosytem](https://rivalz.ai/)
 
 
