@@ -139,6 +139,23 @@ Data adapter shema
 **Aggregator**
 Aggregator aggregates the data retrieved from the fetchers and provide the the final, aggregated data:
 
+Aggregator templates:
+
+```
+{
+  "aggregatorHash": "0x1e1527bed9c502c27cd51b24350a3e4308b55d44598635f731264b3d579d7e5e",
+  "name": "BTC-USDT",
+  "heartbeat": 15000,
+  "threshold": 0.05,
+  "absoluteThreshold": 0.1,
+  "adapterHash": "0xd18f6885ba66c44550c73b4b8a16702bf70e654d9f17d80b4451f80ec616bc60"
+}
+```
+**Methods of aggregation**
+
+Base on the datatypes, we can apply different aggregation methods, some of which that we use:
+<strong>Median<strong>
+
 
 Client and backend aggregation
 
