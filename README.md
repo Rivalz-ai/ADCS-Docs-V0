@@ -134,7 +134,14 @@ Data adapter shema
   ]
 }
 ```
+**Data post processing functions**
 
+• path - list of keys for walk through input JSON
+• index - access n-th item in the input list
+• mul - multiply input with arbitrary number
+• div - divide input with arbitrary number
+• pow10 - compute a power of 10 from input
+• round - apply a round operation on input
 
 **Aggregator**
 Aggregator aggregates the data retrieved from the fetchers and provide the the final, aggregated data:
@@ -155,10 +162,17 @@ Aggregator templates:
 
 Base on the datatypes, we can apply different aggregation methods, some of which that we use:
 
-<strong>Median<strong>\
+<strong>Median<strong>
 
-![alt text](image.png)
+![Median description](image.png)
+
+<strong>Majority voting - the quantity of instances must be an odd number<strong>
+
+![Majority voting description](image-1.png)
+
+**Our supported datatypes and aggregation methods**
+
+![aggregation methods](image-2.png)
 
 
-Client and backend aggregation
 
