@@ -180,7 +180,7 @@ For AI agents compatibility, we store all the aggregated data inside [Rivalz eco
 
 The ecosystem highly ultilize the orbit vector DB, which is built on top of IPFS.\
 In order to retrieve the data, you need to use the rivalz SDK, which is currently supported in:\
-[python - Pypi](https://pypi.org/project/rivalz-client/0.1.12/)
+[python - Pypi](https://pypi.org/project/rivalz-client/0.1.12/)\
 [source code](https://github.com/Rivalz-ai/python-client)
 
 In order to use the SDK, you will need an API key, for early access, please contact us at: support@rivalz.ai
@@ -194,10 +194,28 @@ client = RivalzClient('your_secret_token')
 
 You will also need the IPFS hash of the file to download it and use it as embeddings inside your AI Agents
 
-``
+```
 file_path = client.download_file('QmSampleHash', 'save/directory')
 print(f"File downloaded to: {file_path}")
 ```
+
 For more information about using the Rivalz python client, please read here
 [Rivalz readme](https://github.com/Rivalz-ai/python-client/blob/master/readme.md)
+
+**ADCS decentralizations - introduction to ADCS fetcher nodes**
+
+To maintain the integrity of data, we can opensource our fetcher node so that everyone can run a node and secure the network
+Each node will have it owns copy of aggregated data and agrees upon other nodes via raft consensensus mechanism
+
+![Nodes and datasources](image-3.png)
+
+In each node store a local aggregate and a global aggregate, when the consensus is reached the globale aggregate is the final data for storage
+
+![local vs global aggregates](image-4.png)
+
+![raft consensus](image-5.png)
+
+
+**Disclaimer**
+ADCS is under active developement, some of the information in this document may be outdated
 
