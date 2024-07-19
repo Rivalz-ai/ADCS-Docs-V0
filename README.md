@@ -175,6 +175,29 @@ Base on the datatypes, we can apply different aggregation methods, some of which
 ![aggregation methods](image-2.png)
 
 **Create embeddings vector via Rivalz**
+
 For AI agents compatibility, we store all the aggregated data inside [Rivalz ecosytem](https://rivalz.ai/)
 
+The ecosystem highly ultilize the orbit vector DB, which is built on top of IPFS.\
+In order to retrieve the data, you need to use the rivalz SDK, which is currently supported in:\
+[python - Pypi](https://pypi.org/project/rivalz-client/0.1.12/)
+[source code](https://github.com/Rivalz-ai/python-client)
+
+In order to use the SDK, you will need an API key, for early access, please contact us at: support@rivalz.ai
+
+```
+from rivalz_client.client import RivalzClient
+
+# Initialize the client with your secret token
+client = RivalzClient('your_secret_token')
+```
+
+You will also need the IPFS hash of the file to download it and use it as embeddings inside your AI Agents
+
+``
+file_path = client.download_file('QmSampleHash', 'save/directory')
+print(f"File downloaded to: {file_path}")
+```
+For more information about using the Rivalz python client, please read here
+[Rivalz readme](https://github.com/Rivalz-ai/python-client/blob/master/readme.md)
 
