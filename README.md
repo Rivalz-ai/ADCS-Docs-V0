@@ -216,6 +216,6 @@ In each node store a local aggregate and a global aggregate, when the consensus 
 ![raft consensus](image-5.png)
 
 
-**Disclaimer**
+**Disclaimer**\
 ADCS is under active developement, some of the information in this document may be outdated
 
