@@ -155,7 +155,8 @@ Aggregator templates:
 
 Base on the datatypes, we can apply different aggregation methods, some of which that we use:
 
-<strong>Median<strong>
+<strong>Median<strong>\
+
 ![alt text](image.png)
 
 
