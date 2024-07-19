@@ -1,7 +1,7 @@
 **Introduction**
 
-Agentic Data Coordination Service (ADCS) is a service that allows AI Agents to have access to authentic, aggregated data for decision making.
-**Components**
+Agentic Data Coordination Service (ADCS) is a service that allows AI Agents to have access to authentic, aggregated data for decision making.\
+**Components**\
 **Fetcher nodes V1**
 The goal of fetcher is to fetch data from different sources, base on the definition inside data adapter.
 Data adapter shema
