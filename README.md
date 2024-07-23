@@ -1,6 +1,7 @@
 **Introduction**
 
-Agentic Data Coordination Service (ADCS) is a service that allows AI Agents to have access to authentic, aggregated data for decision making.\
+The Agentic Data Coordination Service is real-time data oracle network, a middleware layer in advanced AI ecosystems, facilitating the orchestration of validated, aggregated data streams and feeds to autonomous AI agents. This service acts as a critical nexus for information flow, ensuring that AI decision-making processes are fueled by a wide-range of authenticated data covering everything from web2 resources, to blockhain indexing, protocol data and pricing.\
+
 **Components**\
 **Fetcher nodes V1**
 The goal of fetcher is to fetch data from different sources, base on the definition inside data adapter.
@@ -62,9 +63,8 @@ Aggregator templates:
   "aggregatorHash": "0x1e1527bed9c502c27cd51b24350a3e4308b55d44598635f731264b3d579d7e5e",
   "name": "BTC-USDT",
   "heartbeat": 15000,
-  "threshold": 0.05,
-  "absoluteThreshold": 0.1,
-  "adapterHash": "0xd18f6885ba66c44550c73b4b8a16702bf70e654d9f17d80b4451f80ec616bc60"
+  "adapterHash": "0xd18f6885ba66c44550c73b4b8a16702bf70e654d9f17d80b4451f80ec616bc60",
+  "method": "median"
 }
 ```
 **Methods of aggregation**
