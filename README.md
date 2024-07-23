@@ -8,11 +8,15 @@ Data adapter shema
 ```
 {
   "adapterHash": "0xd18f6885ba66c44550c73b4b8a16702bf70e654d9f17d80b4451f80ec616bc60",
+  "categoryID": 1
   "name": "BTC-USDT",
-  "decimals": 8,
-  "feeds": [
+  "returnData": {
+    "datatType": "number",
+     "decimals": 8,
+  }
+  "dataSources": [
     {
-      "name": "Bybit-BTC-USDT",
+      "provider": "Bybit-BTC-USDT",
       "definition": {
         "url": "https://api.bybit.com/derivatives/v3/public/tickers?symbol=BTCUSDT",
         "headers": { "Content-Type": "application/json" },
@@ -27,7 +31,7 @@ Data adapter shema
       }
     },
     {
-      "name": "UniswapV3-0.3-WBTC-USDT",
+      "provider": "UniswapV3-0.3-WBTC-USDT",
       "definition": {
         "chainId": "1",
         "address": "0x9db9e0e53058c89e5b94e29621a205198648425b",
